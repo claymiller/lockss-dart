@@ -1,7 +1,22 @@
 {
-  "id": "d7d9172e-ffc3-4642-ab3c-03421f31f422",
-  "name": "Export Settings - 22 Nov 26 16:26 PST",
-  "appSettings": [],
+  "id": "58ca4123-0736-4e8d-bc7b-e9fca9fff9c3",
+  "name": "Export Settings - 22 Nov 26 16:57 PST",
+  "appSettings": [
+    {
+      "id": "64ff255d-9a25-47c0-9005-ea4dcc414f6d",
+      "name": "Control Characters in File Names",
+      "value": "Fail Validation",
+      "choices": [
+        "Ignore",
+        "Warn",
+        "Refuse to Bag",
+        "Fail Validation"
+      ],
+      "help": "What should DART do if it finds Unicode control characters in the names of files to be bagged? These characters are not allowed in object names or metadata in S3-compatible storage services, and may cause storage to fail. Options: Ignore = ignore the issue. Warn = warn me, but build the bag anyway and let it pass validation. Refuse to Bag = warn me and do not build the bag. Fail Validation = build the bag but make it fail validation.",
+      "errors": {},
+      "userCanDelete": false
+    }
+  ],
   "bagItProfiles": [
     {
       "id": "386dbd66-598b-46e2-85ea-745729b3ed42",
@@ -13,7 +28,7 @@
       ],
       "allowFetchTxt": false,
       "bagItProfileInfo": {
-        "bagItProfileIdentifier": "{clay will supply later}",
+        "bagItProfileIdentifier": "https://raw.githubusercontent.com/claymiller/lockss-dart/refs/heads/main/TDL-DART-TestSettings.json",
         "bagItProfileVersion": "1.3.0",
         "contactEmail": "lockss-support@lockss.org",
         "contactName": "LOCKSS Support team",
